@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Scrabble Score Calculator</h1>
+    </div>
+      <h2>What is your Word?</h2><br>
+
+        <form action="/result" method="post">
+          <label for="word"></label>
+          <input type="text" name="word">
+          <button type="submit">Check Score</button>
+        </form>
+      <h5><a href="/TEMPLATE">TEMPLATE</a></h5><br>
+    </div>
