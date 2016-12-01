@@ -70,5 +70,14 @@ namespace  ScrabbleScore
       int wordScore = newScore.ScoreCalc();
       Assert.Equal(true, expectedResult == wordScore);
     }
+    [Fact]
+    public void ScoreCalc_MultipleLetters_true()
+    {
+      string word = "scrabble";
+      int expectedResult = 14;
+      Score newScore = new Score(word);
+      int wordScore = newScore.ScoreCalc();
+      Assert.Equal(true, expectedResult == wordScore);
+    }
   }
 }

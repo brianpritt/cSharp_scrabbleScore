@@ -26,18 +26,20 @@ namespace ScrabbleScore.Objects
         {8, new List<char> {'j','x'}},
         {10, new List<char> {'q','z'}}
       };
-      foreach (char letter in ScrabbleWord)
+      foreach (char letter in ScrabbleWord)//go through each letter in provided word
       {
-        foreach (var kvp in scoreList)
+        foreach (var kvp in scoreList)//cycle through dictionary
         {
-          for (int v = 0; v < kvp.Value.Count; v++)
-            if (letter == kvp.Value[v])
+          for (int v = 0; v < kvp.Value.Count; v++)//go through each list in dictionary
+          {
+            if (letter == kvp.Value[v])//if the current letter == the current letter in the dictionary
             {
-              WordScore += kvp.Key;
+              WordScore += kvp.Key;//add the number of the Key to word score
             }
           }
         }
-        return WordScore;
       }
+      return WordScore;
     }
   }
+}
