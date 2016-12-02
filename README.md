@@ -20,4 +20,4 @@ This application will:
 7. Spec 6 plus Return score of 10 per each 10 point letter played
   input: Q or Z
   output: 10
-8. Give appropiate score to each letter in in a multiple letter word.
+8. Give appropriate score to each letter in in a multiple letter word.

@@ -32,7 +32,8 @@ namespace ScrabbleScore.Objects
         {
           for (int v = 0; v < kvp.Value.Count; v++)//go through each list in dictionary
           {
-            if (letter == kvp.Value[v])//if the current letter == the current letter in the dictionary
+            char lowerLetter = char.ToLower(letter);
+            if (lowerLetter == kvp.Value[v])//if the current letter == the current letter in the dictionary
             {
               WordScore += kvp.Key;//add the number of the Key to word score
             }

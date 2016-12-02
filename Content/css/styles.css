@@ -1,0 +1,15 @@
+
+.form{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+}
+h1{
+  text-align: center;
+}
+body{
+  background-image: url("/Content/img/tiles.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
